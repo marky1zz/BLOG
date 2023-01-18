@@ -639,7 +639,7 @@ input, textarea, select {
         width: var(--container-width-md);
     }
 
-    /* SINGLE POST ============================== */
+    /* SINGLE POST =============================== */
 
     .single_post-container {
         background-color: transparent;
