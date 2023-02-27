@@ -27,6 +27,7 @@ const hideSidebarBtn = document.querySelector('#hide_sidebar-btn');
 
 
 // show sidebar on small devices
+
 const showSidebar = () => {
     sidebar.style.left = '0';
     showSidebarBtn.style.display = 'none';
@@ -40,10 +41,11 @@ const hideSidebar = () => {
     hideSidebarBtn.style.display = 'none';
 }
 
-showSidebarBtn.addEventListener('click', showSidebar);
-hideSidebarBtn.addEventListener('click', hideSidebar);
-
-
-
+if (showSidebarBtn) {
+    showSidebarBtn.addEventListener('click', showSidebar);
+}
+if (hideSidebarBtn) {
+    hideSidebarBtn.addEventListener('click', hideSidebar);
+}
 
 
