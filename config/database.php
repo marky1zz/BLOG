@@ -1,7 +1,6 @@
 <?php
 require 'config/constants.php';
 
-echo "hello";
 // connecting to database
 $connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
