@@ -1,3 +1,7 @@
+<?php 
+    require 'config/constants.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="css/style1.css">
     <!-- ICONSCOUT SDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- GOOGLE FONTS -->
@@ -20,19 +24,19 @@
             <div class="alert_message error">
                 <p>This is an error message</p>
             </div>
-            <form action="" enctype="multipart/form-data">
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Creat Password">
-                <input type="password" placeholder="Confirm Password">
+            <form action="<?= ROOT_URL ?>signup-logic.php" enctype="multipart/form-data">
+                <input type="text" name="firstname" placeholder="First name">
+                <input type="text" name="lastname" placeholder="Last name">
+                <input type="text" neme="username" placeholder="Username">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="createpassword" placeholder="Creat Password">
+                <input type="password" name="confirmpassword" placeholder="Confirm Password">
                 <div class="form_control">
                     <label for="avatar">User Avatar</label>
-                    <input type="file" id="avatar">
+                    <input type="file" name="avatar" id="avatar">
                 </div>
-                <button type="submit" class="btn">Sign Up</button>
-                <small>Already have an account? <a href="signin.html">Sign Ip</a></small>
+                <button type="submit" name="submit" class="btn">Sign Up</button>
+                <small>Already have an account? <a href="signin.php">Sign Ip</a></small>
             </form>
         </div>
     </section>

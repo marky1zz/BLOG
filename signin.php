@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="css/style1.css">
     <!-- ICONSCOUT SDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- GOOGLE FONTS -->
@@ -24,7 +24,7 @@
                 <input type="text" placeholder="Username or Password">
                 <input type="password" placeholder="Password">
                 <button type="submit" class="btn">Sign Ip</button>
-                <small>Don't have an account? <a href="signup.html">Sign Up</a></small>
+                <small>Don't have an account? <a href="signup.php">Sign Up</a></small>
             </form>
         </div>
     </section>
