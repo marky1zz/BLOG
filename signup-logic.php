@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require 'config/database.php';
 
 // get signup from data if signup button was clicked
@@ -80,6 +80,7 @@ if (isset($_POST['submit'])) {
         $insert_user_result = mysqli_query($connection, $insert_user_query);
 
         if (!mysqli_errno($connection)) {
+            // After registration is successful
             // redirect to login page with success message
             $_SESSION['signup-success'] = "Registration successful. Please login";
             header('location: ' . ROOT_URL . 'signin.php');
