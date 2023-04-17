@@ -64,7 +64,6 @@ if (isset($_POST['submit'])) {
                     $_SESSION['signup'] = "File should be png, jpg, ppeg";
                 }
             }
-    
         }
     }
 
