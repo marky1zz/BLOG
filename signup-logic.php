@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
     $avatar = $_FILES['avatar'];
     // echo $firstname, $lastname, $username, $email, $createpassword, $confirmpassword;
     //var_dump($avatar);
-    //------------------
+
     // check if input values are valid
     if (!$firstname) {
         $_SESSION['signup'] = "Please enter your First name";
