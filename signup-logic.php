@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 require 'config/database.php';
 
@@ -64,7 +64,6 @@ if (isset($_POST['submit'])) {
                     $_SESSION['signup'] = "File should be png, jpg, ppeg";
                 }
             }
-    
         }
     }
 
@@ -86,7 +85,6 @@ if (isset($_POST['submit'])) {
             header('location: ' . ROOT_URL . 'signin.php');
             die();
         }
-
     }
 
 } else {
@@ -94,3 +92,4 @@ if (isset($_POST['submit'])) {
     header('location: ' . ROOT_URL . 'signup.php');
     die();
 }
+?>
